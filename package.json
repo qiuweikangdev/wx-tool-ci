@@ -1,0 +1,46 @@
+{
+	"private": true,
+	"name": "wx-tool-ci",
+	"version": "0.0.0",
+	"description": "基于miniprogram-ci插件开发的小程序上传、预览自动化工具",
+	"scripts": {
+		"clear": "rimraf packages/*/{dist,node_modules}",
+		"dev:ci": "pnpm -C ./packages/wx-tool-ci dev",
+		"build:ci": "pnpm -C ./packages/wx-tool-ci build",
+		"prepare": "husky install",
+		"commit": "git cz"
+	},
+	"keywords": [
+		"miniprogram-ci",
+		"ci",
+		"cli",
+		"mini-ci",
+		"wx-tool-ci",
+		"weapp-ci"
+	],
+	"author": "qiuweikangdev",
+	"license": "MIT",
+	"lint-staged": {
+		"*.{js,ts,jsx,tsx}": "eslint --fix",
+		"*.{js,ts,json}": "prettier --write"
+	},
+	"config": {
+		"commitizen": {
+			"path": "node_modules/cz-git"
+		}
+	},
+	"devDependencies": {
+		"@commitlint/cli": "^17.3.0",
+		"@commitlint/config-conventional": "^17.3.0",
+		"@typescript-eslint/eslint-plugin": "^5.46.1",
+		"@typescript-eslint/parser": "^5.46.1",
+		"commitizen": "^4.2.6",
+		"cz-git": "^1.4.1",
+		"eslint": "^8.29.0",
+		"eslint-config-prettier": "^8.5.0",
+		"husky": "^8.0.2",
+		"lint-staged": "^13.1.0",
+		"prettier": "^2.8.1",
+		"rimraf": "^3.0.2"
+	}
+}

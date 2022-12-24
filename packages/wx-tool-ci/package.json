@@ -1,0 +1,38 @@
+{
+	"name": "wx-tool-ci",
+	"version": "0.0.0",
+	"description": "基于miniprogram-ci插件开发的小程序上传、预览自动化工具",
+	"bin": {
+		"wx-tool": "bin/index.mjs"
+	},
+	"files": [
+		"bin",
+		"lib"
+	],
+	"type": "module",
+	"scripts": {
+		"dev": "nodemon",
+		"build": "unbuild"
+	},
+	"keywords": [
+		"miniprogram-ci",
+		"ci",
+		"cli",
+		"mini-ci",
+		"wx-tool-ci",
+		"weapp-ci"
+	],
+	"author": "qiuweikangdev",
+	"license": "MIT",
+	"dependencies": {
+		"cac": "^6.7.14",
+		"miniprogram-ci": "^1.9.3",
+		"ora": "^6.1.2",
+		"zx": "7.1.0"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.20",
+		"tsx": "^3.12.1",
+		"unbuild": "^1.0.2"
+	}
+}

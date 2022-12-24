@@ -1,0 +1,23 @@
+{
+	"compilerOptions": {
+		"target": "ESNext",
+		"module": "ESNext",
+		"declaration": true,
+		"removeComments": false,
+		"preserveConstEnums": true,
+		"moduleResolution": "node",
+		"experimentalDecorators": true,
+		"noImplicitAny": false,
+		"allowSyntheticDefaultImports": true,
+		"noUnusedLocals": true,
+		"skipLibCheck": true,
+		"noUnusedParameters": false,
+		"strictNullChecks": true,
+		"sourceMap": true,
+		"resolveJsonModule": true,
+		"typeRoots": ["node_modules/@types", "global.d.ts"]
+	},
+	"compileOnSave": true,
+	"exclude": ["node_modules/**/*", "dist/*", "lib/*"],
+	"include": ["packages/**/*"]
+}
