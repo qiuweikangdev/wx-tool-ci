@@ -1,6 +1,6 @@
 {
 	"name": "wx-tool-ci",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "基于miniprogram-ci插件开发的小程序上传、预览自动化工具",
 	"bin": {
 		"wx-tool": "bin/index.mjs"
