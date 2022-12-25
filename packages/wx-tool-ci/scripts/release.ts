@@ -3,4 +3,4 @@ import { $ } from 'zx';
 
 const { options } = cac().parse();
 const { version } = options;
-$`pnpm exec release-it --bump ${version}`;
+$`pnpm exec release-it ${version}`;
