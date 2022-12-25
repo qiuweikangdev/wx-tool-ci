@@ -1,11 +1,40 @@
-import { fs, globby } from 'zx';
+import { $, fs, globby, sleep } from 'zx';
+import ora from 'ora';
 import { resolve } from 'node:path';
 import { pathToFileURL } from 'node:url';
 import config from '../config';
-import { error, warn } from './logger';
+import { error, info, success, warn } from './logger';
+import childProcess from 'child_process';
+import util from 'util';
+const exec = util.promisify(childProcess.exec);
+$.verbose = false;
 
 // 获取路径
 export const getPath = (path: string) => resolve(process.cwd(), path);
+
+// 执行命令
+export const execCommand = async (
+	commandList: { desc: string; command: string }[] = [],
+) => {
+	if (commandList.length) {
+		for (const item of commandList) {
+			const { command, desc } = item;
+			const spinner = ora({
+				text: (desc && info(desc, '\n')) || 'loading...\n',
+			});
+			spinner.start();
+			await sleep(200);
+			const result = await exec(command, { cwd: process.cwd() });
+			$.log({
+				kind: 'stdout',
+				data: result.stdout as unknown as Buffer,
+				verbose: true,
+			});
+			spinner.stop();
+			success(`${item.desc}成功\n`);
+		}
+	}
+};
 
 // 获取配置
 export const getCiConfig = async () => {

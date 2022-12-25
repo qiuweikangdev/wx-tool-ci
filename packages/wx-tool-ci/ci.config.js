@@ -45,4 +45,11 @@ export default {
 		// 预览二维码文件保存路径
 		qrcodeOutputDest: '/path/to/qrcode/file/destination.jpg',
 	},
+	/**
+	 *  上传前执行脚本, 如上传之前进行打包
+	 *  [{ command: 'pnpm build',desc: '打包'}]
+	 */
+	beforeCommand: [{ command: 'pnpm build', desc: '打包' }],
+	// 上传之后执行脚本
+	// afterCommand: [],
 };
