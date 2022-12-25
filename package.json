@@ -1,12 +1,12 @@
 {
 	"private": true,
 	"name": "wx-tool-ci",
-	"version": "0.0.0",
 	"description": "基于miniprogram-ci插件开发的小程序上传、预览自动化工具",
 	"scripts": {
 		"clear": "rimraf packages/*/{dist,node_modules}",
 		"dev:ci": "pnpm -C ./packages/wx-tool-ci dev",
 		"build:ci": "pnpm -C ./packages/wx-tool-ci build",
+		"release:ci": "pnpm -C ./packages/wx-tool-ci release",
 		"prepare": "husky install",
 		"commit": "git cz"
 	},

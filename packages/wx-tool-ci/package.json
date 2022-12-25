@@ -12,7 +12,11 @@
 	"type": "module",
 	"scripts": {
 		"dev": "nodemon",
-		"build": "unbuild"
+		"build": "unbuild",
+		"release": "tsx ./scripts/release.ts"
+	},
+	"publishConfig": {
+		"registry": "https://registry.npmjs.org"
 	},
 	"keywords": [
 		"miniprogram-ci",
@@ -32,6 +36,7 @@
 	},
 	"devDependencies": {
 		"nodemon": "^2.0.20",
+		"release-it": "^15.5.1",
 		"tsx": "^3.12.1",
 		"unbuild": "^1.0.2"
 	}
