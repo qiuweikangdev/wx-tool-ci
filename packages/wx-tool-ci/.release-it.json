@@ -4,7 +4,7 @@
 	},
 	"git": {
 		"commitMessage": "release: v${version}",
-		"tagName": "wx-tool-ci-v%s"
+		"tagName": "wx-tool-ci-v${version}"
 	},
 	"npm": {
 		"publish": true
