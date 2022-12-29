@@ -1,5 +1,12 @@
 
 
+# [1.1.0](https://github.com/qiuweikangdev/wx-tool-ci/compare/wx-tool-ci-v1.0.1...wx-tool-ci-v1.1.0) (2022-12-29)
+
+
+### Features
+
+* **wx-tool-ci:** 支持上传前后执行脚本 ([1fa6b24](https://github.com/qiuweikangdev/wx-tool-ci/commit/1fa6b24ee3691b60e641d991977465f24e3f03f7))
+
 ## [1.0.1](https://github.com/qiuweikangdev/wx-tool-ci/compare/wx-tool-ci-v1.0.0...wx-tool-ci-v1.0.1) (2022-12-25)
 
 
