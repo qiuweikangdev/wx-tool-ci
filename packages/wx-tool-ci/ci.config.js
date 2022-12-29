@@ -14,17 +14,17 @@ export default {
 	setting: {
 		es6: true,
 		es7: false,
-		//上传时压缩 JS 代码
+		// 上传时压缩 JS 代码
 		minifyJS: false,
-		//上传时压缩 WXML 代码
+		// 上传时压缩 WXML 代码
 		minifyWXML: false,
-		//上传时压缩 WXSS 代码
+		// 上传时压缩 WXSS 代码
 		minifyWXSS: false,
-		//上传时压缩所有代码，对应于微信开发者工具的 "上传时压缩代码"
+		// 上传时压缩所有代码，对应于微信开发者工具的 "上传时压缩代码"
 		minify: true,
-		//对应于微信开发者工具的 "上传时进行代码保护"
+		// 对应于微信开发者工具的 "上传时进行代码保护"
 		codeProtect: false,
-		//对应于微信开发者工具的 "上传时样式自动补全"
+		// 对应于微信开发者工具的 "上传时样式自动补全"
 		autoPrefixWXSS: false,
 	},
 	// 小程序版本号, 如果未指定,默认取当前项目中的package.json的version,version默认1.0.0
@@ -43,13 +43,13 @@ export default {
 	// 预览自定义配置
 	previewOptions: {
 		// 预览二维码文件保存路径
-		qrcodeOutputDest: '/path/to/qrcode/file/destination.jpg',
+		qrcodeOutputDest: '/preview/destination.jpg',
 	},
 	/**
 	 *  上传前执行脚本, 如上传之前进行打包
 	 *  [{ command: 'pnpm build',desc: '打包'}]
 	 */
-	beforeCommand: [{ command: 'pnpm build', desc: '打包' }],
+	beforeCommand: [],
 	// 上传之后执行脚本
-	// afterCommand: [],
+	afterCommand: [],
 };
