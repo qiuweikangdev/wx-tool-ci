@@ -1,5 +1,12 @@
 
 
+# [1.2.0](https://github.com/qiuweikangdev/wx-tool-ci/compare/wx-tool-ci-v1.1.0...wx-tool-ci-v1.2.0) (2023-02-14)
+
+
+### Features
+
+* 暴露命令方法 ([35fd48c](https://github.com/qiuweikangdev/wx-tool-ci/commit/35fd48c412a2489343aaff3d0ac45a0f6602b2ef))
+
 # [1.1.0](https://github.com/qiuweikangdev/wx-tool-ci/compare/wx-tool-ci-v1.0.1...wx-tool-ci-v1.1.0) (2022-12-29)
 
 
